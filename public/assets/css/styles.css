@@ -15,8 +15,8 @@ body {
   font-family: 'Ubuntu Mono', monospace;
 }
 
-.jumbotron {
-  background: url("../public/images/Notetaker.png");
+header .jumbotron {
+  background: url("../public/assets/images/Notetaker.png");
   background-size: cover;
   height: 400px;
 }
