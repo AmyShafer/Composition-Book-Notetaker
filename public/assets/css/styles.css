@@ -16,10 +16,11 @@ body {
 }
 
 .jumbotron {
-  background: url("../public/assets/images/Notetaker.png");
+  background: url("/assets/images/Notetaker.png");
   background-size: cover;
   height: 400px;
   width: auto;
+  z-index: 0;
 }
 
 .save-note {
