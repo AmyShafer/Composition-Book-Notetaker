@@ -15,10 +15,11 @@ body {
   font-family: 'Ubuntu Mono', monospace;
 }
 
-header .jumbotron {
+.jumbotron {
   background: url("../public/assets/images/Notetaker.png");
   background-size: cover;
   height: 400px;
+  width: auto;
 }
 
 .save-note {
