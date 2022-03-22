@@ -16,7 +16,7 @@ body {
 }
 
 .jumbotron {
-  background: url("public/assets/images/Notetaker.png");
+  background: url("../public/images/Notetaker.png");
   background-size: cover;
   height: 400px;
 }
