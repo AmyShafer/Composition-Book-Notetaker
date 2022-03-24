@@ -22,4 +22,4 @@ notes.post('/', (req, res) => {
     res.end();
 });
 
-exports.module = notes;
+module.exports = notes;
