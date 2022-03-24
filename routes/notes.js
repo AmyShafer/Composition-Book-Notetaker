@@ -1,5 +1,5 @@
 const notes = require('express').Router();
-const notesData = require('./');
+const notesData = require('../db/notes.json');
 const fs = require('fs');
 
 // GET Route for retrieving all the notes
@@ -19,6 +19,7 @@ notes.post('/', (req, res) => {
     } else {
       console.log("You done messed up, B!"); 
     }
-})
+    res.end();
+});
 
 exports.module = notes;

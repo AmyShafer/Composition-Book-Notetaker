@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const api = require('./routes/index.js')
 const notes = require('./routes/notes.js');
 
 const PORT = process.env.PORT || 3001;
@@ -7,10 +8,11 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Middleware for parsing JSON and urlencoded form data
-app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
-app.use('/api/notes', notes);
+app.use('/api', api);
+
+app.use(express.static('public'));
 
 // GET Route for homepage
 app.get('/', (req, res) => 
@@ -24,7 +26,7 @@ app.get('/', (req, res) =>
 // POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
 
 // GET Route for notes page
-app.get('/notes', (req, res) => 
+app.get(notes, (req, res) => 
   res.sendFile(path.join(__dirname, ('/public/notes.html')))
 );
 
