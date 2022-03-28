@@ -18,10 +18,6 @@ app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, ('/public/index.html')))
 );
 
-// The following API routes should be created:
-
-// GET /api/notes should read the db.json file and return all saved notes as JSON.
-
 // GET Route for notes page
 app.get("/notes", (req, res) => 
   res.sendFile(path.join(__dirname, ('/public/notes.html')))

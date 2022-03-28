@@ -28,16 +28,6 @@ body {
   display: none;
 }
 
-.saveBtn {
-  width: 83px;
-  height: 83px;
-}
-
-.addBtn {
-  width: 75px;
-  height: 75px;
-}
-
 .icons, .saveBtn, .addBtn {
   margin-left: 15px;
   margin-right: 15px;
@@ -45,7 +35,7 @@ body {
   cursor: pointer;
 }
 
-.icons:hover, .saveBtn:hover, .addBtn:hover {
+.icons:hover, .save-note:hover, .new-note:hover {
   margin-left: 15px;
   margin-right: 15px;
   font-size: 1.5rem;
