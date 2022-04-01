@@ -6,20 +6,24 @@ const path = require('path');
 // GET Route for retrieving all the notes
 notes.get('/api/notes', (req, res) => {
   fs.readFile(path.join(__dirname, '../db/db.json'), "utf8", (err, data) => res.json(JSON.parse(data)))
+  res.json(notesData);
 });
 
 // POST /api/notes should receive a new note to save on the request body, add it to the db.json file, and then return the new note to the client. You'll need to find a way to give each note a unique id when it's saved (look into npm packages that could do this for you).
 
 notes.post('/api/notes', (req, res) => {
-    const { title, text } = req.body;
-
+    const newNote = req.body;
+    newNote.id = notesData.length + 1;
+    
     if (title && text) {
-      const newNote = {
+      newNote = {
           title,
           text,
       };
 
-    fs.writeFile(path.join(__dirname, '../db/db.json'), JSON.stringify(newNote), (err, data) => res.json(JSON.parse(data)))
+      notesData.push(newNote);
+
+     fs.writeFileSync(path.join(__dirname, '../db/notes.json'), JSON.stringify(notesData), (err, data) => res.json(JSON.parse(data)))
     } else {
       console.log("Error."); 
     }
