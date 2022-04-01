@@ -23,6 +23,7 @@ notes.post('/api/notes', (req, res) => {
       notesData.push(newNote);
 
      fs.writeFileSync(path.join(__dirname, '../db/notes.json'), JSON.stringify(notesData), (err, data) => res.json(JSON.parse(data)))
+     console.log(data);
     } else {
       console.log("Error."); 
     }
