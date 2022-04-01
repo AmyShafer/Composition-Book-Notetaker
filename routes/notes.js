@@ -5,7 +5,6 @@ const path = require('path');
 
 // GET Route for retrieving all the notes
 notes.get('/api/notes', (req, res) => {
-  fs.readFile(path.join(__dirname, '../db/db.json'), "utf8", (err, data) => res.json(JSON.parse(data)))
   res.json(notesData);
 });
 
@@ -15,7 +14,7 @@ notes.post('/api/notes', (req, res) => {
     const newNote = req.body;
     newNote.id = notesData.length + 1;
     
-    if (title && text) {
+    if (this.title && this.text) {
       newNote = {
           title,
           text,
