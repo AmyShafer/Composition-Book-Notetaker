@@ -48,7 +48,7 @@ body {
   font-family: 'Bangers', cursive;
   color: var(--gel-pen-pink);
   font-size: 2em;
-  text-shadow: 0 0 2px var(--lined-paper-white), 0 0 3px var(--gold-star);
+  text-shadow: 2px 2px 16px rgba(0, 0, 0, .80), 2px 2px 17px rgba(247, 190, 44, .90);
 }
 
 .bg-dark {
