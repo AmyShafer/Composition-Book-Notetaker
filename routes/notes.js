@@ -2,7 +2,7 @@ const notes = require('express').Router();
 let notesData = require('../db/notes.json');
 const fs = require('fs');
 const path = require('path');
-
+    
 // GET Route for retrieving all the notes
 notes.get('/api/notes', (req, res) => {
   fs.readFile(path.join(__dirname, '../db/notes.json'), 'utf8', (err, data) => res.json(JSON.parse(data)));
