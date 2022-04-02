@@ -48,6 +48,7 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
   color: var(--gel-pen-pink);
+  box-shadow: 0 0 4px var(--lined-paper-white), 0 0 7px var(--gold-star);
 }
 
 .icons:hover i {

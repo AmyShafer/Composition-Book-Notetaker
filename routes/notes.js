@@ -11,7 +11,7 @@ notes.get('/api/notes', (req, res) => {
 // POST /api/notes should receive a new note
 notes.post('/api/notes', (req, res) => {
     const newNote = req.body;
-    newNote.id = notesData.length + 1;
+    newNote.id = notesData.length + 2;
     
     if (req.body.title) {
       notesData.push(newNote);

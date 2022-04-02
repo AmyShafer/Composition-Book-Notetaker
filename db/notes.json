@@ -1,12 +1,1 @@
-[
-    {
-        "title":"Buy Cat Food",
-        "text":"Saturday Sale",
-        "id":1
-    },
-    {
-        "title":"Jazz Band Practice",
-        "text":"Bring Sheet Music Copies",
-        "id":2
-    }
-]
+[{"title":"Robotics Club","text":"Friday at 2pm","id":3},{"title":"Pets Plus","text":"Buy More Cat Food","id":2},{"title":"Movie Night","text":"Regal at 7pm","id":4},{"title":"Call Carol","text":"Ask her for a ride on Sunday","id":5}]
