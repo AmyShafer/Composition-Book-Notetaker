@@ -42,5 +42,5 @@ The responsiveness of the homepage could be better.
 <a href=https://github.com/AmyShafer/Composition-Book-Notetaker target="_blank_">Composition Book Notetaker Repository</a> 
 
 ## Deployed-url
-<a href="https://amyshafer.github.io/Its-Raining-Again-Or-Is-It/" target="_blank_">Composition Book Notetaker URL</a> 
+<a href="https://Composition-Book-Notetaker.herokuapp.com/" target="_blank_">Composition Book Notetaker URL</a> 
 
