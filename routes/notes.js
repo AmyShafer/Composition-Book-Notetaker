@@ -30,6 +30,10 @@ notes.delete('/api/notes/:id', (req, res) => {
   console.log(deleted);
   if (deleted) {
     notesData = notesData.filter(currentNotes => currentNotes.id != id);
+    
+    fs.writeFileSync(path.join(__dirname, '../db/notes.json'), JSON.stringify(notesData), (err, data) => res.json(JSON.parse(data)))
+    
+    
   } else {
     res.status(404).json({ message: "The note you are looking for is not here."})
   }

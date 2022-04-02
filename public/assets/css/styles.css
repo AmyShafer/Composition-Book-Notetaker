@@ -26,7 +26,7 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--band-practice-blue);
+  background-color: var(--after-school-baby-carrots);
   border: var(--lined-paper-white);
   box-shadow: 0 0 4px var(--lined-paper-white), 0 0 7px var(--gold-star);
 }
