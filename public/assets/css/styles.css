@@ -139,3 +139,7 @@ body {
   padding: 20px;
   cursor: pointer;
 }
+
+.delete-note i { 
+  color: var(--gel-pen-pink);
+}
