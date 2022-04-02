@@ -18,7 +18,7 @@ body {
 
 .jumbotron {
   color: var(--gel-pen-pink);
-  background: url("/assets/images/Notetaker.png");
+  background: url("../images/Notetaker.png");
   background-size: cover;
   height: 500px;
   width: auto;
@@ -33,6 +33,7 @@ body {
   margin-right: 15px;
   font-size: 1.5rem;
   cursor: pointer;
+  color: var(--gel-pen-pink);
 }
 
 .icons:hover, .save-note:hover, .new-note:hover {
