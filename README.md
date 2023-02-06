@@ -14,6 +14,9 @@ This app was inspired by a time before apps were a thing. Forget about having to
 
 This website was created with starter code and a modge podge of technologies including Node.js, JavaScript, Boostrap, CSS, Express, and Heroku.
 
+*February 2023 Update*
+This application has been moved to Render hosting.
+
 ## Mockup
 
 Here's a couple of screenshots from the Composition Book Notetaker app:
@@ -30,6 +33,9 @@ Here's a couple of screenshots from the Composition Book Notetaker app:
 
 * <a href="https://devcenter.heroku.com/articles/git" target="_blank"> I visited the Heroku docs to refresh my memory on how to deploy to Heroku. </a> 
 
+*February 2023 Update*
+* <a href="https://www.youtube.com/watch?v=MusIvEKjqsc" target="_blank"> I needed to move this project to a free hosting service and Brad Traversy was a big help in learning about Render hosting and how to deploy to it! </a> 
+
 ## Possible-improvements
 
 It's silly, but I very much wanted to change the colors of the trash can icons and I could not figure it out. 
@@ -42,5 +48,5 @@ The responsiveness of the homepage could be better.
 <a href=https://github.com/AmyShafer/Composition-Book-Notetaker target="_blank_">Composition Book Notetaker Repository</a> 
 
 ## Deployed-url
-<a href="https://composition-book-notetaker.herokuapp.com/" target="_blank_">Composition Book Notetaker URL</a> 
+<a href="https://composition-book-notetaker.onrender.com/" target="_blank_">Composition Book Notetaker URL</a> 
 
